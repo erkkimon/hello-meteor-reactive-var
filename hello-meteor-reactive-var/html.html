@@ -1,0 +1,17 @@
+<head>
+  <title>hello-meteor-reactive-var</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+
+  {{> itemsTemplate}}
+</body>
+
+<template name="itemsTemplate">
+	<input type="text" id="searchQuer" placeholder="Search items" />
+	<p>{{searchQuery}}</p>
+	{{#each items}}
+	<p><b>{{name}}</b> {{description}}</p>
+	{{/each}}
+</template>
